@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<title>Movie Database</title>
+<h1 style="text-align:center">Movie Database</h1>
+<script>
+var display = new Array(4);
+var index= 0;
+function cycle()
+{
+	document.front.src = display[index].src;
+	index++;
+	if(index > 7)
+	{
+		index = 0;
+	}
+	setTimeout("cycle()",2000);
+	return;
+}
+function load()
+{
+	display[0] = new Image;
+	display[0].src = "images/actors/AJ.jpg";
+	display[1] = new Image;
+	display[1].src = "images/actors/JD.jpg";
+	display[2] = new Image;
+	display[2].src = "images/actors/LD.jpg";
+	display[3] = new Image;
+	display[3].src= "images/actors/NP.jpg";
+	display[4] = new Image;
+	display[4].src= "images/actors/TH.jpg";
+	display[5] = new Image;
+	display[5].src= "images/actors/SJ.jpg";
+	display[6] = new Image;
+	display[6].src= "images/actors/TC.jpg";
+	display[7] = new Image;
+	display[7].src= "images/actors/SB.jpg";
+	cycle();
+	return;
+}
+</script>
+</head>
+
+
+<body style="background-color:lightgrey" onLoad="load()">
+
+<div class="container-fluid">
+ <div class="row">
+  <nav class="navbar navbar-default">
+
+  <div class="navbar-header">
+   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+   </button>
+  </div>
+
+
+
+ <ul class="nav navbar-nav navbar-right">
+ <li><a a href="index.html"><span ></span>Home</a></li>
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a  a href=about.html><span ></span>About</a></li>
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a  a href="top10.html"><span ></span>Top 10 Movies</a></li>
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a a href="worst10.html"><span ></span>10 Worst Movies</a></li>
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a ><span ></span> </a></li><!--space-->
+ <li><a  a href="login.html"><span ></span>Login</a></li>
+ <li><a ><span ></span> </a></li><!--space-->
+</ul>
+
+</nav>
+</div>
+
+<!--Left-->
+<div class="row">
+<div class="col-md-4 col-sm-4 col-xs-12">
+<div id="left">
+</div>
+</div>
+
+<!--Center-->
+<div class="col-md-4 col-sm-4 col-xs-12">
+<div id="center">
+<p style="text-align:center;font-size:160%;">Welcome to my website</p>
+<img name="front" src="images/actors/AJ.jpg" "height="350" width="300">
+</div>
+</div>
+
+<!--Right-->
+<div class="col-md-4 col-sm-4 col-xs-12">
+<div id="right">
+</div>
+</div>
+</body>
+</html>
